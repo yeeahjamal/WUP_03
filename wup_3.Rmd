@@ -29,6 +29,12 @@ $H_A$: There IS a difference between alcohol consumption between different rows!
 
 We predict alcohol consumption based on row
 Alcohol ~ Seat
+
+Alcohol is a numeric variable
+Seat is a categorical variable
+
+so w use the num~cat file.
+
 ## Now with ggplot - first select the basic data
 
 ```{r}
