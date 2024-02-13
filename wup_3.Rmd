@@ -77,9 +77,11 @@ The P value is 0.000116 which is < 0.05. That means that students in all the row
 ```{r}
 plot(TukeyHSD(model1))
 ```
-The HSD model shows that the people seated in the back row drink more than the people sitting in the middle and front rows. There is no evidence between alcohol consumtion between the middle and front row.
+The HSD model shows that the people seated in the back row drink more than the people sitting in the middle and front rows. There is no evidence between alcohol consumption between the middle and front row.
 
 ## Conclusions
 
 
+To answer if the amount of drinking varies weekly between front, middle, and back seats. we must find the numerical value, the numerical mean of front seats was 1.787500 the mean of back seats was 8.555556 and the mean for middle seats was 3.331461. The P value is less than 0.05, this results in the REJECTION of $H_0$: There is no difference per week between the different seating rows. There is no difference between middle seats and front seats.  
 
+ 
