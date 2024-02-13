@@ -33,7 +33,7 @@ Alcohol ~ Seat
 Alcohol is a numeric variable
 Seat is a categorical variable
 
-so we use the num~cat file.
+so we use the num~cat file.   
 
 #description
 ## graphical description
