@@ -33,7 +33,11 @@ Alcohol ~ Seat
 Alcohol is a numeric variable
 Seat is a categorical variable
 
-so w use the num~cat file.
+so we use the num~cat file.
+
+#description
+## graphical description
+
 
 ## Now with ggplot - first select the basic data
 
@@ -52,10 +56,16 @@ basicCN + geom_boxplot()
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
-
+ 
+ This boxplot shows the numerical data of alcohol consumed for back, front, and middle seats
+ 
 ## Numerical Summarys 
 
+
+
 ## Inferential Tests
+
+
 
 ## Conclusions
 
