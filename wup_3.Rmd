@@ -60,13 +60,26 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
  This boxplot shows the numerical data of alcohol consumed for back, front, and middle seats
  
 ## Numerical Summarys 
-
-
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+Numerical Summary shows that median for Back seat consumption is 3.5, Front seat consumption 0.0, and Middle seat consumption of 1.0 
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+The P value is 0.000116 which is < 0.05. That means that students in all the rows do NOT consume the same amount of alcohol.
 
+
+```{r}
+plot(TukeyHSD(model1))
+```
+The HSD model shows that the people seated in the back row drink more than the people sitting in the middle and front rows. There is no evidence between alcohol consumtion between the middle and front row.
 
 ## Conclusions
+
 
 
